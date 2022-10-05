@@ -1,0 +1,57 @@
+body {
+    padding: 0;
+    margin: 0;
+    /* background-size:cover;
+    background-repeat: no-repeat; */
+}
+
+.content {
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu-tabs {
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid rgb(214, 214, 47);
+}
+
+.menu-tabs > div {
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid rgb(214, 214, 47);
+    border-radius: 12px;
+    background-color: rgb(235, 235, 92);
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.menu-tabs > div:hover {
+    cursor: pointer;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+}
+
+#card {
+    background-color: rgb(214, 214, 47);
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+}
+
+footer {
+    text-align: center;
+    border-top: 2px solid rgb(214, 214, 47);
+}
+
+footer > div {
+    margin: 5px;
+
+}

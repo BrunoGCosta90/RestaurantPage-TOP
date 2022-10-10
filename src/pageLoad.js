@@ -14,10 +14,13 @@ const pageLoad = () => {
 
     header.appendChild(home);
     home.textContent = "Home";
+    home.id = 'home-button';
     header.appendChild(menu);
     menu.textContent = "Menu";
+    menu.id = 'menu-button';
     header.appendChild(contact);
     contact.textContent = "Contact";
+    contact.id = 'menu.contact';
     pageContent.appendChild(header);
 
     main.id = "main";
@@ -39,6 +42,10 @@ const pageLoad = () => {
 
     // const homeMain = document.createElement('div');
     // homeMain
+
+    // add events to menu buttons
+
+    
 };
 
 export { pageLoad };

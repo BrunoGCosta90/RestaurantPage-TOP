@@ -1,6 +1,8 @@
-import { pageLoad } from "./pageLoad";
-import { homeLoad } from "./home";
-import './style.css';
+import { pageLoad } from "./functions/pageLoad";
+import { homeLoad } from "./functions/home";
+import { menuLoad } from "./functions/menu";
+import { cleanPage } from "./functions/cleanPage";
+import './styles/style.css';
 
 pageLoad();
 homeLoad();

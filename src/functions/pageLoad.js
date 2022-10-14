@@ -1,4 +1,8 @@
-import Background from './clickwallpapers-pao-de-queijo-brazil-img2.jpg';
+import Background from '../images/clickwallpapers-pao-de-queijo-brazil-img2.jpg';
+import { cleanPage } from './cleanPage';
+import { contactLoad } from './contact';
+import { homeLoad } from './home';
+import { menuLoad } from './menu';
 
 const pageLoad = () => {
     //document.body.style.backgroundImage = `url(${Background})`;
@@ -20,7 +24,7 @@ const pageLoad = () => {
     menu.id = 'menu-button';
     header.appendChild(contact);
     contact.textContent = "Contact";
-    contact.id = 'menu.contact';
+    contact.id = 'contact-button';
     pageContent.appendChild(header);
 
     main.id = "main";
@@ -40,12 +44,27 @@ const pageLoad = () => {
 
     header.classList.add('menu-tabs')
 
-    // const homeMain = document.createElement('div');
-    // homeMain
+    // add event to menu buttons
 
-    // add events to menu buttons
+    header.addEventListener('click', event => {
+        switch (event.target.id) {
+            case 'home-button':
+                cleanPage();
+                homeLoad();
+                break;
+            case 'menu-button':
+                cleanPage();
+                menuLoad();
+                break;
+            case 'contact-button':
+                cleanPage();
+                contactLoad();
+                break;
+            default:
+                return;
+        }
+    })
 
-    
 };
 
 export { pageLoad };

@@ -1,7 +1,7 @@
 :root {
     --yellow : rgb(214, 214, 47);
     --background-yellow: rgb(175, 175, 43);
-    --background-image: url('./free-cheese-seamless-vector.jpg');
+    --background-image: url('../images/free-cheese-seamless-vector.jpg');
 }
 
 body {
@@ -67,6 +67,10 @@ body {
     text-align: center;
 }
 
+.centered {
+    text-align: center;
+}
+
 .card {
     /* background-color: rgb(214, 214, 47); */
     width: 70vw;
@@ -86,5 +90,9 @@ footer {
 
 footer > div {
     margin: 5px;
+}
 
+a {
+    color: var(--yellow);
+    text-decoration: none;
 }

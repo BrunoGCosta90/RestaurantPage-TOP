@@ -1,8 +1,4 @@
-//import CardBackground from './free-cheese-seamless-vector.jpg';
-
 const homeLoad = () => {
-    const homeButton = document.getElementById('home-button');
-    homeButton.classList.add('selected');
 
     const title = document.createElement('div');
     title.textContent = "Welcome to The Cheese Bun!";

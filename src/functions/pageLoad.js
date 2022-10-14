@@ -1,4 +1,5 @@
 import Background from '../images/clickwallpapers-pao-de-queijo-brazil-img2.jpg';
+import { swapStyle } from './buttonStyleSwap';
 import { cleanPage } from './cleanPage';
 import { contactLoad } from './contact';
 import { homeLoad } from './home';
@@ -19,6 +20,7 @@ const pageLoad = () => {
     header.appendChild(home);
     home.textContent = "Home";
     home.id = 'home-button';
+    home.classList.add('selected')
     header.appendChild(menu);
     menu.textContent = "Menu";
     menu.id = 'menu-button';
@@ -43,6 +45,7 @@ const pageLoad = () => {
     pageContent.classList.add('content')
 
     header.classList.add('menu-tabs')
+    header.id = 'header';
 
     // add event to menu buttons
 
@@ -50,14 +53,17 @@ const pageLoad = () => {
         switch (event.target.id) {
             case 'home-button':
                 cleanPage();
+                swapStyle(event.target.id);
                 homeLoad();
                 break;
             case 'menu-button':
                 cleanPage();
+                swapStyle(event.target.id);
                 menuLoad();
                 break;
             case 'contact-button':
                 cleanPage();
+                swapStyle(event.target.id);
                 contactLoad();
                 break;
             default:

@@ -7,10 +7,6 @@
 body {
     padding: 0;
     margin: 0;
-    /* background-size:cover;
-    background-repeat: no-repeat; */
-
-    /*color: rgb(236, 8, 8);*/
     color: var(--yellow);
     font-weight: 800;
     text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
@@ -37,9 +33,7 @@ body {
     width: 25px;
     border: 2px solid var(--yellow);
     border-radius: 12px;
-    /* background-color: rgb(235, 235, 92); */
     font-size: 20px;
-    /* font-weight: 800; */
     width: 100px;
     text-align: center;
 }
@@ -50,14 +44,12 @@ body {
 
 .menu-tabs > div:hover {
     cursor: pointer;
-    /* background-color: var(--background-yellow); */
     background-image: none;
     background-color: white;
 }
 
 #main {
     display: flex;
-    /* justify-content: center; */
     flex-direction: column;
     align-items: center;
     overflow: scroll;
@@ -73,8 +65,6 @@ body {
 }
 
 .card {
-    /* background-color: rgb(214, 214, 47); */
-    /* width: 70vw; */
     width: min(40vw, 70vw);
     height: fit-content;
     padding: 10px;

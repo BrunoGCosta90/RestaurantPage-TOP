@@ -6,7 +6,6 @@ import { homeLoad } from './home';
 import { menuLoad } from './menu';
 
 const pageLoad = () => {
-    //document.body.style.backgroundImage = `url(${Background})`;
     const pageContent = document.getElementById('content');
     const header = document.createElement('div');
     const home = document.createElement('div');

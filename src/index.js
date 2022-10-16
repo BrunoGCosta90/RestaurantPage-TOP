@@ -4,5 +4,3 @@ import './styles/style.css';
 
 pageLoad();
 homeLoad();
-
-// teste.querySelectorAll('*').forEach(content => content.remove())

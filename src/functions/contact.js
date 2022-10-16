@@ -7,7 +7,7 @@ const contactLoad = () => {
     phoneTitle.textContent = 'Phone';
     phoneTitle.classList.add('title');
     const phoneNumber = document.createElement('p');
-    phoneNumber.textContent = '+55 011 55555-5555';
+    phoneNumber.textContent = '555 5555 555';
     phoneNumber.classList.add('centered');
     contactPhone.appendChild(phoneTitle);
     contactPhone.appendChild(phoneNumber);
